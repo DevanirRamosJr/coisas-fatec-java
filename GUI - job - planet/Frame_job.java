@@ -67,6 +67,7 @@ public class Frame_job extends JFrame {
 		counter = 0;
 		click = 0;
 		Job[] trab = new Job[20];
+		
 		setTitle("Cadastro de Profiss\u00F5es");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(370, 200, 463, 381);
@@ -219,6 +220,7 @@ public class Frame_job extends JFrame {
 							+ nome + ", " + sexo + ", " + idade + " anos\n"
 							+ job + "\n"
 							+ "R$" + money, "Confirmação", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE);
+					//cria um trab
 					if (input == 0) {
 						trab[counter] = new Job(nome, sexo, job, idade, money);
 						counter += 1;
@@ -318,6 +320,7 @@ public class Frame_job extends JFrame {
 		Bvoltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cl.show(Panel00, "2");
+				click = 0;
 			}
 		});
 		Bvoltar.setFont(new Font("Times New Roman", Font.PLAIN, 20));
@@ -419,7 +422,6 @@ public class Frame_job extends JFrame {
 				LshowIdade10.setText(String.valueOf(trab[1].getAnos()));
 				LshowJob10.setText(trab[1].getJob());
 				LshowMoney10.setText(String.valueOf(trab[1].getSalario()));
-
 			}
 		});
 		B21.setFont(new Font("Times New Roman", Font.PLAIN, 20));
