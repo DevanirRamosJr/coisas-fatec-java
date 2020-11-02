@@ -12,5 +12,6 @@ Possui duas classes de objetos (job e planet) e duas interfaces do swing que uti
 
 #GUI - filme - login - item
 ==========
-Possui três classes de objetos (filme, login e item) e três interfaces do swing que utilizam as três classes de objetos
+Possui três classes de objetos (filme, login e item) e três interfaces do swing que utilizam as três classes de objetos.
+As interfaces utilizam, respectivamente, ArrayList, HashMap e HashSet.
 
