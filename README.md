@@ -18,3 +18,5 @@ As interfaces utilizam, respectivamente, ArrayList, HashMap e HashSet.
 #GUI + BD - filme - login - item
 ==========
 Possui três interfaces do swing que utilizam banco de dados para armazenar e manipular informações.
+
+
